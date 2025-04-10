@@ -16,6 +16,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerPickupItemEvent;
 import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -62,6 +63,13 @@ public class PlayerListener implements Listener {
       for (Block block : blocks) {
         if (block == null) return;
         if (block.getType().equals(Material.AIR) || isCurse(block)) continue;
+
+        if (block.getState() instanceof InventoryHolder){
+          block.breakNaturally();
+          block.setType(Main.setupWizard.serverData.getMaterial());
+          continue;
+        }
+
         block.setType(Main.setupWizard.serverData.getMaterial());
       }
     }
@@ -71,6 +79,9 @@ public class PlayerListener implements Listener {
 
 
     if (Main.setupWizard.serverData.getCurseOnSight()) {
+      if (blockInSight.getState() instanceof InventoryHolder){
+        blockInSight.breakNaturally();
+      }
       blockInSight.setType(Main.setupWizard.serverData.getMaterial());
     }
 

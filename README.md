@@ -40,12 +40,12 @@
 
   # Installation
 
-  Download the plugin in the `releases` tab and place it in your `plugins` folder, this plugin was made for Minecraf 1.21 and was tested on it! It may or may not work on newer versions
+  Download the plugin in the `releases` tab and place it in your `plugins` folder, this plugin was made for Minecraft 1.21 and was tested on it! It may or may not work on newer versions
 
   # How to build
 
-  ### Tested on: Paper 1.21-130.jar
-  ### Built on: Maven, OpenJDK 17.0.14 LTS
+  ### Tested on: `Paper 1.21-130.jar`
+  ### Built on: `Maven`, `OpenJDK 17.0.14 LTS`
   
   ### Command to build: `mvn clean package`
 
@@ -81,13 +81,13 @@
   ### /curse_start
   - Usa este comando para ACTIVAR / DESACTIVAR el uso de maldiciones, recomiendo usarlo cuando vas a empezar a grabar, para que al grabar ya esté todo funcionando. También lo puedes activar después, como gustes.
 
-  ### set_curse_block
+  ### /set_curse_block
   - Coloca el `Material` del item que tengas en la mano como el `Material Maldito`, todos los bloques al ser convertidos van a convertirse a este `Material`
 
-  ### set_curse_relative_distance
+  ### /set_curse_relative_distance
   - Puedes cambiar la distancia a la que se cambian los bloques para la `Maldición de Toque`.
 
-  ### set_sight_distance
+  ### /set_sight_distance
   - Cambia la distancia a la que se convierten los bloques cuando los miras
 
   # Cómo descargar / instalar
@@ -96,8 +96,8 @@
   - Abre el servidor, o de ya estar abierto, usa `/reload confirm`
 
   # Como Compilar
-  ### Testeado en: Paper 1.21-130.jar
-  ### Compilado con: Maven, OpenJDK 17.4.14 LTS
+  ### Testeado en: `Paper 1.21-130.jar`
+  ### Compilado con: `Maven`, `OpenJDK 17.4.14 LTS`
   ### Comando para compilar: `mvn clean package`
 
 
@@ -110,4 +110,4 @@ Made by [SoyMako](https://youtube.com/@SoyMako)
 Feel free to use this in your videos, and make sure to TAG me! I would love to see your creations!
 
 Creado por [SoyMako](https://youtube.com/@SoyMako)
-Sientete libre de usar esto en tus vídeos, acuérdate de tagearme en la descripción. Me encantaría ver tu vídeo!
+Sientete libre de usar este plugin en tus vídeos, acuérdate de tagearme en la descripción. Me encantaría ver tu vídeo!
