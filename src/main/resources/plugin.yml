@@ -1,0 +1,4 @@
+name: MakosCurse
+version: '${project.version}'
+main: me.soymako.makoscurse.Main
+api-version: '1.21'
