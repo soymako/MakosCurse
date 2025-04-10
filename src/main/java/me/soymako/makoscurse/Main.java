@@ -4,14 +4,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
 
-    @Override
-    public void onEnable() {
+  public static Main instance;
+  public static SetupWizard setupWizard = new SetupWizard();
 
+  @Override
+  public void onEnable() {
+    instance = this;
+    setupWizard.setup();
+  }
 
-    }
-
-    @Override
-    public void onDisable() {
-        // Plugin shutdown logic
-    }
 }

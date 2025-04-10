@@ -2,3 +2,18 @@ name: MakosCurse
 version: '1.0'
 main: me.soymako.makoscurse.Main
 api-version: '1.21'
+
+commands:
+  set_curse_block:
+    description: 'Set the current curse block'
+  curse_start:
+    description: 'toggles the curse'
+  set_sight_distance:
+    description: 'Sets the sight distance'
+  set_curse_relative_distance:
+    description: 'Sets the curse relative distance'
+
+  configuration:
+    description: 'Opens the configuration menu'
+    aliases:
+      - config
